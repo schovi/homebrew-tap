@@ -5,21 +5,21 @@
 class Shelli < Formula
   desc "Persistent interactive shell sessions via PTY"
   homepage "https://github.com/schovi/shelli"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/schovi/shelli/releases/download/v0.7.0/shelli_0.7.0_darwin_amd64.tar.gz"
-      sha256 "c8a3dd8c6de6d6956d2c80d0685d16b3db874f8ce685c7572608c632f3a24d9b"
+      url "https://github.com/schovi/shelli/releases/download/v0.8.0/shelli_0.8.0_darwin_amd64.tar.gz"
+      sha256 "36ae5db4dfe7a20a8643b5fcdd458c99d8b0c326b53b109162422ae8b4e079db"
 
       def install
         bin.install "shelli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/schovi/shelli/releases/download/v0.7.0/shelli_0.7.0_darwin_arm64.tar.gz"
-      sha256 "9cce9ae00e35c12fd0baf909189e42e208422fef3ac399f435162ac59667535a"
+      url "https://github.com/schovi/shelli/releases/download/v0.8.0/shelli_0.8.0_darwin_arm64.tar.gz"
+      sha256 "74613ed6e30f26510e37063f0d25f38eb0b14b7b08349127f9cb30b874a66dbc"
 
       def install
         bin.install "shelli"
@@ -29,15 +29,15 @@ class Shelli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/schovi/shelli/releases/download/v0.7.0/shelli_0.7.0_linux_amd64.tar.gz"
-      sha256 "db8543b7258c30b1a6375493e5574d5906e51e3236bfe55921fea75ba80796c8"
+      url "https://github.com/schovi/shelli/releases/download/v0.8.0/shelli_0.8.0_linux_amd64.tar.gz"
+      sha256 "e199f50b8bb1cd117f0a35780be4188e6078fc9b71668b454f485eb11a876880"
       def install
         bin.install "shelli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/schovi/shelli/releases/download/v0.7.0/shelli_0.7.0_linux_arm64.tar.gz"
-      sha256 "e672de245da38f4de4f8b22168aede70bf08aebad10d2a3e760c8692bb82f131"
+      url "https://github.com/schovi/shelli/releases/download/v0.8.0/shelli_0.8.0_linux_arm64.tar.gz"
+      sha256 "b9b4387ea8e856a9ce31574ec3c6aae8d2d16d87f37111c56017b9ea3ed9c3f4"
       def install
         bin.install "shelli"
       end
