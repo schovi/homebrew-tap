@@ -11,7 +11,7 @@ class Shelli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/schovi/shelli/releases/download/v0.9.0/shelli_0.9.0_darwin_amd64.tar.gz"
-      sha256 "e626395498f9e3cb4b6c6e9d0d2c7b378b0c1e8332ec8814799904ed16e9ba0a"
+      sha256 "35887d346fd5d461c7475c4933da8348e5a31ffd8171743e6ba6689ab7e9f3c4"
 
       def install
         bin.install "shelli"
@@ -19,7 +19,7 @@ class Shelli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/schovi/shelli/releases/download/v0.9.0/shelli_0.9.0_darwin_arm64.tar.gz"
-      sha256 "3356c2b6b5be2f6b570c5bbf1ce9d907547ac7c2bd90576378503ede06e9b9f4"
+      sha256 "1c293b3d361784688984f8e55b81da6e825ccb67b53adc2683c88ddd846702c3"
 
       def install
         bin.install "shelli"
@@ -30,14 +30,14 @@ class Shelli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/schovi/shelli/releases/download/v0.9.0/shelli_0.9.0_linux_amd64.tar.gz"
-      sha256 "a3c704ec0bce253608af9a13e2923e003c451717a73445e48580a4073e8fb80a"
+      sha256 "81db910e206fe0c86771014c37b5089a5b01d9406feecaa666ab23fdeee9a79e"
       def install
         bin.install "shelli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/schovi/shelli/releases/download/v0.9.0/shelli_0.9.0_linux_arm64.tar.gz"
-      sha256 "e012c5e046df4fa39e747c193dad1dd35f8e20933a0e72d097d15bf61562352a"
+      sha256 "f70c7a317e0a411b6cb1b316555086a80db5399ba91d947058553cc1fcde234a"
       def install
         bin.install "shelli"
       end
