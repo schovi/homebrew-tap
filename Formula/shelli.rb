@@ -5,21 +5,21 @@
 class Shelli < Formula
   desc "Persistent interactive shell sessions via PTY"
   homepage "https://github.com/schovi/shelli"
-  version "1.2.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/schovi/shelli/releases/download/v1.2.0/shelli_1.2.0_darwin_amd64.tar.gz"
-      sha256 "6d5a63c68aec342c0e8c730b8c457dea0347c982ff0aa08745526daa16c05157"
+      url "https://github.com/schovi/shelli/releases/download/v1.1.1/shelli_1.1.1_darwin_amd64.tar.gz"
+      sha256 "d990f627154fd7fc3cfa6e4dbb629c75781c5e647a58eb774fd8ae846ccf4daa"
 
       define_method(:install) do
         bin.install "shelli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/schovi/shelli/releases/download/v1.2.0/shelli_1.2.0_darwin_arm64.tar.gz"
-      sha256 "0dc761db46efec0355c8f7f42413e025297ac7307d19b8dc67b2eb3935c39ae8"
+      url "https://github.com/schovi/shelli/releases/download/v1.1.1/shelli_1.1.1_darwin_arm64.tar.gz"
+      sha256 "a57c929944eacee21159f19ceed9086862d843b0e249f5af7e13f97dfad50412"
 
       define_method(:install) do
         bin.install "shelli"
@@ -29,15 +29,15 @@ class Shelli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/schovi/shelli/releases/download/v1.2.0/shelli_1.2.0_linux_amd64.tar.gz"
-      sha256 "cd990eb80299a39ed5e6dace602b5f66da3382e6a404f3c025cbc1417bb4e040"
+      url "https://github.com/schovi/shelli/releases/download/v1.1.1/shelli_1.1.1_linux_amd64.tar.gz"
+      sha256 "c3f9cfdd22867345a426701577ef380228e4d6ebdbc296de195ef103be4ca476"
       define_method(:install) do
         bin.install "shelli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/schovi/shelli/releases/download/v1.2.0/shelli_1.2.0_linux_arm64.tar.gz"
-      sha256 "f65eb35af4e9bd1a7596e9f2f4f78735ab6fd37466f4aeb89785182412283323"
+      url "https://github.com/schovi/shelli/releases/download/v1.1.1/shelli_1.1.1_linux_arm64.tar.gz"
+      sha256 "5eca6e098a00307fc9ef70c74f5dada435eda86a0a4bb465ccc57e5a4c7fb348"
       define_method(:install) do
         bin.install "shelli"
       end
