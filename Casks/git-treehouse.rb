@@ -36,5 +36,4 @@ cask "git-treehouse" do
   binary "gth"
 
   # No zap stanza required
-
 end
