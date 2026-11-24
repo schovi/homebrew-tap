@@ -1,26 +1,26 @@
 class Mcpainless < Formula
   desc "Local manager and proxy for remote MCP servers"
   homepage "https://github.com/schovi/mcpainless"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
   on_macos do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://mcpainless.com/download/0.2.0/mcpainless_0.2.0_darwin_amd64.tar.gz"
-      sha256 "30d84a8209b032c12a80bc827f80c6a9560b2685347ddbadefcfda7d2cddfdf9"
+      url "https://mcpainless.com/download/0.3.0/mcpainless_0.3.0_darwin_amd64.tar.gz"
+      sha256 "6319ffa6dbddf13a1d5523ec6f0e58f56ead6366dea71d04c1f514c40f5bfa39"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://mcpainless.com/download/0.2.0/mcpainless_0.2.0_darwin_arm64.tar.gz"
-      sha256 "87093dfd441153c0b9afb7591394c2afb14dd2edb3b1263a47168d7bd8890a93"
+      url "https://mcpainless.com/download/0.3.0/mcpainless_0.3.0_darwin_arm64.tar.gz"
+      sha256 "288f20319c47ad7e379df491f9ec2d4988e827ed1c54391a9308fc2952880389"
     end
   end
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://mcpainless.com/download/0.2.0/mcpainless_0.2.0_linux_amd64.tar.gz"
-      sha256 "b1c50f47a9197b99c6fa60aa45034e3679f1dc980442ae18c5b67362b2504425"
+      url "https://mcpainless.com/download/0.3.0/mcpainless_0.3.0_linux_amd64.tar.gz"
+      sha256 "deb0adcfbbaedd52fb3687af7aa993f894eb19a24e33d3afb2dd2bc7daac9448"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://mcpainless.com/download/0.2.0/mcpainless_0.2.0_linux_arm64.tar.gz"
-      sha256 "ad8f5590d171d90dbce9934ff7c9fb4ea7f7c9db219cb317cfa577378f0270fe"
+      url "https://mcpainless.com/download/0.3.0/mcpainless_0.3.0_linux_arm64.tar.gz"
+      sha256 "17d86a273ce8e165a5e12dc18966e7104cfeed8b3c7f5e72a122e42b6c20699e"
     end
   end
   def install
